@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>FLAGGER — Guess the Flag</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- decorative emotion shapes -->
+  <div class="critter c1"><span class="eyes"><i></i><i></i></span></div>
+  <div class="critter c2"><span class="eyes"><i></i><i></i></span></div>
+  <div class="critter c3 sm"><span class="eyes"><i></i><i></i></span></div>
+  <div class="critter c4"><span class="eyes"><i></i><i></i></span></div>
+  <div class="critter c5 sm"><span class="eyes"><i></i><i></i></span></div>
+
+  <div class="toast" id="toast"><span class="star">★</span><span id="toastMsg">New best streak</span></div>
+  <div class="confetti" id="confetti"></div>
+
+  <main class="app">
+    <div class="top">
+      <div class="brand">FLA<span class="o"></span>GER</div>
+      <div class="best">BEST <b id="bestVal">0</b></div>
+    </div>
+
+    <div class="diff" id="diff" role="group" aria-label="Difficulty">
+      <button class="diff-btn" type="button" data-diff="easy">Easy</button>
+      <button class="diff-btn" type="button" data-diff="hard">Hard</button>
+    </div>
+
+    <div class="streak" id="streakStrip">
+      <span class="label">Streak</span>
+      <span class="count" id="streakVal">0</span>
+    </div>
+
+    <div class="stage">
+      <div class="flag-wrap" id="flagWrap">
+        <div class="flag-shape"><img id="flagImg" alt="Flag to guess" /></div>
+      </div>
+    </div>
+    <div class="region" id="region">Worldwide</div>
+
+    <div class="prompt">
+      <h2 id="promptSub">Tap your answer</h2>
+    </div>
+
+    <div class="options" id="options"></div>
+
+    <div class="footer">
+      <button class="next" id="nextBtn" hidden>Next →</button>
+    </div>
+
+    <div class="credit">Flags via flagcdn</div>
+  </main>
+
+  <script src="countries.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
