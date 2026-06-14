@@ -69,7 +69,7 @@ body::after {
 
 /* ── difficulty toggle ── */
 .diff {
-  margin-top: 14px; display: inline-flex; gap: 4px;
+  margin-top: 44px; display: inline-flex; gap: 4px;
   background: rgba(20,18,16,.07); padding: 4px; border-radius: 999px;
 }
 .diff-btn {
