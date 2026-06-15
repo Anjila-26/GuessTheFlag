@@ -1,1 +1,8 @@
 .playwright-mcp
+
+# Secrets — never commit
+.env
+.env.*
+
+# Node
+node_modules
